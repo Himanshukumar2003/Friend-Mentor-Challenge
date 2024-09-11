@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+
+body {
+  font-family: "Bellefair", serif !important;
+}
+
+
+
+.bg-img{
+   background-image: url("https://multi-step-form-frontmentor.vercel.app/assets/bg-sidebar-desktop.svg"); 
+
+    background-size: cover;
+   background-position: center;
+   overflow: hidden;
+ height: 100% ; 
+width: 100%;
+
+ 
+} 
+
+
+
+
+.Space{
+
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.spaceHome{
+background-image: url("https://fm-space-tourism.davequah.com/assets/home/background-home-desktop.jpg");
+
+}
+.Destination{
+  background-image: url("https://fm-space-tourism.davequah.com/assets/destination/background-destination-desktop.jpg") ;
+}
+
+
+.spaceHome, .crew, .Destination, .tech{
+  min-height: 100vh;
+     z-index: -1 !important;
+  background-size: cover;
+     background-position: center;
+  
+}
+.crew{
+  background-image: url("https://fm-space-tourism.davequah.com/assets/crew/background-crew-desktop.jpg");
+}
+
+.tech{
+  background-image: url("https://fm-space-tourism.davequah.com/assets/technology/background-technology-desktop.jpg");
+}
+
+.large-button {
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+  display: inline-grid;
+  place-items: center;
+  background-color: white;
+  padding: 0 2em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.large-button:hover::after{
+  opacity: 30%;
+  transform: scale(1.5);
+  background-color: white;
+}
+
+.large-button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all .8s;
+
+  width: 100%;
+  height: 100%;
+  background: hsl(var(white) / 0.15);
+  border-radius: 50%;
+  opacity: 0;
+}
