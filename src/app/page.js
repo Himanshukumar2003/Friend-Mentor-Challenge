@@ -15,7 +15,6 @@ export default function Home() {
     { Name: "Space", link: "/space" },
     { Name: "stap Form", link: "/stapform" },
     { Name: "food app", link: "/foodapp" },
-    { Name: "calculator", link: "calculator" },
   ];
   return (
     <>
