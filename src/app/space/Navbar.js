@@ -23,9 +23,7 @@ export default function SpaceNav() {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
 
-  const closeBTn = () => {
-    setMenuOpen(false);
-  };
+
 
   return (
     <div className="z-[9999] fixed        top-0 lg:top-5 w-full">
@@ -54,16 +52,6 @@ export default function SpaceNav() {
               menuOpen ? "flex" : "hidden"
             } flex-col lg:flex-row bg-white bg-opacity-10 backdrop-blur-[5rem] gap-[clamp(1.5rem,5vw,3.5rem)] px-[70px] h-fu lg:flex z-[9999] h-full lg:h-auto`}
           >
-            <CloseIcon
-              onClick={closeBTn}
-              className="block lg:hidden"
-              style={{
-                color: "white",
-                fontSize: "50px",
-                marginBottom: "5px",
-                textAlign: "right",
-              }}
-            />
 
             {link.map((item, index) => (
               <Link
